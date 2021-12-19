@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  localstack:
+    image: localstack/localstack:0.13.1
+    ports:
+      - 4566:4566
+      - 4571:4571
+    environment:
+      - SERVICES=ec2,s3,cloudfront,route53
+    volumes:
+      - ./.state:/tmp/localstack
