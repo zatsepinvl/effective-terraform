@@ -27,6 +27,7 @@ module "s3_bucket" {
 }
 
 // (!) AWS CloudFont is not supported by localstack community :(((.
+/*
 module "cdn" {
   source = "terraform-aws-modules/cloudfront/aws"
 
@@ -54,3 +55,4 @@ module "cdn" {
     cloudfront_default_certificate = true
   }
 }
+*/
